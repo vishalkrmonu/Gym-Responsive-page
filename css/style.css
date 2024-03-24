@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 38%;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+.nav-list{
+width: 50%;
+/* background-color: blue; */
+display: flex;
+align-items: center;
+}
+.nav-list li{
+
+    display: flex;
+    list-style: none;
+    padding: 20px 12px;
+
+}
+.nav-list li a{
+text-decoration: none;
+color: white;
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    color: rgb(203, 25, 25);
+    }
+.rightNav{
+    /* background-color: blueviolet; */
+    width: 30%;
+    text-align: right; 
+    padding: 0 20px;
+ 
+}
+.btn-sm{
+    padding: 5px 8px;
+    vertical-align: middle;
+}
+.background{
+    background:rgba(0,0,0,0.7) url('../img/gym.jpg') ;
+    background-size: cover;
+background-blend-mode: darken;
+}
+.firstsection{
+    height: 90vh;
+}
+.box-main{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: white;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ max-width: 50%;
+ margin: auto;
+ height: 75%;}
+.firsthalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.secondhalf{
+    width: 30%;
+}
+
+.secondhalf img{
+width: 90%;
+border: 2px solid white;
+display: block;
+margin: auto;
+border-radius: 130px;
+
+}
+.text-big{
+    font-size: 29px;
+    
+    
+    }
+    .text-small{
+    font-size: 14px;
+    padding: 2px 2px;
+    }
+    .contact{
+        background-color: rgb(157, 151, 134);
+        height: 660px;  
+    }
+    .text-center{
+        text-align: center;
+        padding-top: 55px ;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+    }
+    .form{
+        max-width: 400px;
+        margin: 3px auto;
+    }
+    .form-input{
+        margin: 15px 0px;
+        padding: 2px 13px;
+        width: 100%;
+        font-size: 15px;
+        border: 2px solid gray;
+        border-radius: 6px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .btn-dark{
+        color: black;
+        border: 2px solid gray;
+        cursor: pointer;
+    }
+    .burger{
+        display: none;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top:15px;
+
+    }
+    .line{
+        width: 33px;
+        background-color: white;
+        height: 4px;
+        margin: 2px 2px;
+    }
+    @media only screen and (max-width:875px){
+        .nav-list{
+            flex-direction: column;
+        }
+        .navbar{
+            flex-direction: column;
+            transition: all 0.3s ease-out;
+            height: 450px;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    .box-main
+    {
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .form-input{
+        width: 85%;
+    }
+}
